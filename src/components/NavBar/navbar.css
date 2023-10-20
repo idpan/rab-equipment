@@ -1,0 +1,61 @@
+@keyframes navbackground {
+  from {
+    background-color: transparent;
+    color: #282a28;
+  }
+  to {
+    background-color: #282a28;
+    color: #fec232;
+  }
+}
+#navbar .navbar-toggler,
+#navbar .navbar-toggler:focus,
+#navbar .navbar-toggler:active {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+#navbar .nav-item.active {
+  animation-name: navbackground;
+  animation-duration: 0.5s;
+  background-color: #282a28;
+}
+#navbar .nav-item.active .nav-link {
+  color: #fec232;
+}
+#navbar .nav-item {
+  width: fit-content;
+  padding: 0 1rem;
+}
+#navbar .nav-link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: fit-content;
+  color: #282a28;
+  border-bottom: 3px solid transparent;
+}
+#navbar .navbar-toggler span::after {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+}
+#navbar .navbar-toggler[aria-expanded="false"] span::after {
+  background-image: url(/assets/images/icon/menu.svg);
+}
+#navbar .navbar-toggler[aria-expanded="true"] span::after {
+  background-image: url(/assets/images/icon/close.svg);
+}
+@media screen and (min-width: 992px) {
+  #navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #navbar .navbar-brand img {
+    width: 64px;
+  }
+  #navbar .nav-link:hover {
+    border-bottom: 3px solid #282a28;
+  }
+}

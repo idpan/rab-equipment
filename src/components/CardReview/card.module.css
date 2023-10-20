@@ -1,0 +1,21 @@
+.card_footer {
+  background-color: var(--bg-secondary);
+}
+.review p::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  background-image: url(/assets/images/icon/blockquote-start.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.review p::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 1rem;
+  background-image: url(/assets/images/icon/blockquote-end.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #282a28;
+  --bg-grey: #eff1ef;
+  --bg-primary: #fec232;
+  --bg-secondary: #ffe098;
+
+  --color-light: #e1e6f0;
+  --color-dark: #282a28;
+
+  --fs-hero-heading: 60px;
+  --fs-hero-heading-small: 40px;
+  --fs-hero-description: 18px;
+  --fs-hero-description-small: 16px;
+  --fs-body: 16px;
+  --fs-body-small: 14px;
+  --fs-heading: 40px;
+  --fs-heading-small: 32px;
+  --fs-title: 20px;
+  --fs-title-small: 16px;
+
+  font-size: var(--fs-body-small);
+  color: var(--color-dark);
+  letter-spacing: 0.5px;
+}
+* {
+  font-family: "Inter", sans-serif;
+}
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+h2 {
+  font-weight: 700 !important;
+  font-size: 36px !important;
+}
+h1,
+h2,
+h3 {
+  letter-spacing: 1.5px;
+}
+@media screen and (min-width: 992px) {
+  :root {
+    font-size: var(--fs-body);
+  }
+  h2 {
+    font-size: 40px !important;
+  }
+}

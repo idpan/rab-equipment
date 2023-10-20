@@ -1,0 +1,30 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.clients {
+  background-color: var(--bg-light);
+  text-wrap: nowrap;
+}
+
+.clients_logo {
+  display: inline-block;
+  text-wrap: nowrap;
+  animation: 15s slide infinite linear;
+}
+.clients_logo img {
+  margin: 0 20px;
+  height: 40px;
+  width: auto;
+}
+@media screen and (min-width: 992px) {
+  .clients_logo img {
+    height: 60px;
+    width: auto;
+    margin: 0 50px;
+  }
+}

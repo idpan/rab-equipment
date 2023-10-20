@@ -1,0 +1,42 @@
+.equipments {
+  background-color: var(--bg-grey);
+}
+.heading {
+  font-size: var(--fs-heading-small);
+  font-weight: bold;
+}
+.content {
+  width: fit-content;
+}
+.wrapper {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: calc(100vw - ((100vw - 100%) / 2));
+}
+.card {
+  width: 225px;
+}
+.card:last-child {
+  margin-right: 20px;
+}
+@media screen and (min-width: 992px) {
+  .heading {
+    font-size: var(--fs-heading);
+  }
+  .wrapper {
+    padding-right: 0;
+  }
+  .card {
+    width: 600px;
+    height: 320px;
+  }
+  .card img {
+    height: auto;
+  }
+  .card h5 {
+    margin-top: 100px;
+  }
+  .card:last-child {
+    margin-right: 50px;
+  }
+}

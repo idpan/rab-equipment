@@ -1,0 +1,29 @@
+.hero {
+  background-color: var(--bg-dark);
+  background-image: url(/assets/images/hero-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.hero_heading {
+  font-size: var(--fs-hero-heading-small);
+  color: var(--color-light);
+  font-weight: 900;
+}
+.hero_description {
+  font-size: var(--fs-hero-description-small);
+  color: var(--color-light);
+}
+@media screen and (min-width: 992px) {
+  .hero {
+    background-image: url(/assets/images/hero-bg-desktop.png);
+    padding-top: 80px;
+  }
+  .hero_heading {
+    font-size: var(--fs-hero-heading);
+    letter-spacing: 1.5px;
+  }
+  .hero_description {
+    font-size: var(--fs-hero-description);
+  }
+}

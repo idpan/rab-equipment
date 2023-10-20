@@ -1,0 +1,14 @@
+.benefits {
+  background-color: var(--bg-dark);
+  color: var(--color-light) !important ;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.title {
+  font-size: var(--fs-title-small);
+}
+@media screen and (min-width: 992px) {
+  .title {
+    font-size: var(--fs-title);
+  }
+}

@@ -1,0 +1,7 @@
+footer {
+  color: var(--color-light);
+  background-color: var(--bg-dark);
+}
+footer path {
+  fill: var(--color-light);
+}

@@ -1,95 +1,73 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
+import Image from "next/image";
+import style from "./hero.module.css";
+import Button from "../components/Button/Button";
+import Benefits from "@/components/organism/Benefits/Benefits";
+import About from "@/components/organism/About/About";
+import Equipments from "@/components/organism/Equipments/Eqipments";
+import Clients from "@/components/organism/Clients/Clients";
+import CTA from "@/components/organism/CTA/CTA";
+import Section from "@/components/organism/Section/Section";
+import CardReview from "@/components/CardReview/CardReview";
+import Accordion from "@/components/Accordion/Accordion";
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className={style.hero}>
+        <div className="container pt-5 mt-5">
+          <div className="row  mt-5">
+            <div className="col-lg-8 col-sm-10">
+              <h1 className={`${style.hero_heading} `}>
+                Your Trusted Partner for Project Elevation
+              </h1>
+            </div>
+          </div>
+
+          <div className="row mt-2">
+            <div className="col-sm-9 col-lg-6 col-xl-5 ">
+              <p className={`${style.hero_description}  `}>
+                We understand that every project comes with unique demands.
+                That’s why we offer a variety of heavy equipment, so you can
+                tailor your project perfecly
+              </p>
+              <Button>Discover More</Button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      </section>
+      <Benefits />
+      <About />
+      <Equipments />
+      <Clients />
+      <CTA />
+      <Section className="reviews" title="What Our Customer Say">
+        <div className=" d-lg-flex column-gap-5 justify-content-center pt-5">
+          <CardReview
+            review="RAB’s experience and breadth of knowledge meant they could match equipment to the constraints of our budget."
+            name="Peter"
+            position="Head Manager"
+            image="/assets/images/customer/customer-1.png"
+          />
+          <CardReview
+            review="Their knowledge and understanding of our industry reassured us that they could provide the level of service we require."
+            name="James"
+            position="Contractor"
+            image="/assets/images/customer/customer-2.png"
+          />
+          <CardReview
+            review="It was essential for our business to find a company who could minimise equipment downtime within our operation."
+            name="Frank"
+            position="Production Manager"
+            image="/assets/images/customer/customer-3.png"
+          />
+        </div>
+      </Section>
+      <Section title="FAQ" className="faq ">
+        <div className="row justify-content-center">
+          <div className="col-lg-7 ">
+            <Accordion></Accordion>
+          </div>
+        </div>
+      </Section>
+    </>
+  );
 }
