@@ -1,27 +1,7 @@
 import React from "react";
 import style from "./equipments.module.css";
-import Image from "next/image";
 import Button from "../../Button/Button";
-function CardEquipment({ image, title }) {
-  return (
-    <div
-      className={`${style.card} card text-bg-dark border-0 rounded-0
-      `}
-    >
-      <Image
-        className="card-img"
-        src={image}
-        alt="excavator"
-        width={225}
-        height={120}
-      />
-      <div className="card-img-overlay  d-flex align-content-center">
-        <h5 className="card-title display-5 fw-bold text-warning">{title}</h5>
-      </div>
-    </div>
-  );
-}
-
+import CardEquipment from "../CardEquipment/CardEquipment";
 function Eqipments() {
   return (
     <section className={`${style.equipments} pt-5 pt-lg-5 pb-5 `}>
@@ -48,6 +28,7 @@ function Eqipments() {
               title="Bulldozer"
             />
             <CardEquipment
+              className="me-3 me-lg-5"
               image="/assets/images/vibro-roller.png"
               title="Vibro Roller"
             />

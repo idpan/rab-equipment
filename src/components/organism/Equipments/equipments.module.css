@@ -19,6 +19,12 @@
 .card:last-child {
   margin-right: 20px;
 }
+.card h5 {
+  color: var(--bg-primary);
+}
+.card p {
+  color: var(--color-light);
+}
 @media screen and (min-width: 992px) {
   .heading {
     font-size: var(--fs-heading);

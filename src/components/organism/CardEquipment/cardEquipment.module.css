@@ -1,0 +1,17 @@
+.card {
+  min-width: 225px;
+  max-width: 360px;
+  /* min-height: 320px; */
+}
+@media screen and (min-width: 992px) {
+  .card {
+    min-width: 600px;
+    min-height: 320px;
+  }
+  .card img {
+    height: auto;
+  }
+  .card h5 {
+    margin-top: 100px;
+  }
+}

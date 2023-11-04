@@ -1,0 +1,29 @@
+.hero {
+  height: 250px;
+  background-image: url(/assets/images/hero-bg-desktop.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero h1 {
+  color: var(--bg-primary);
+  font-weight: 900;
+  font-size: var(--fs-hero-heading-small);
+}
+.hero p {
+  color: var(--color-light);
+  font-size: var(--fs-hero-description-small);
+}
+@media screen and (min-width: 992px) {
+  .hero {
+    height: 550px;
+    display: flex;
+    align-items: center;
+  }
+  .hero h1 {
+    font-size: var(--fs-hero-heading);
+  }
+  .hero p {
+    font-size: var(--fs-hero-description);
+  }
+}

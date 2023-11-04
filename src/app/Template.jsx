@@ -6,6 +6,7 @@ import Link from "next/link";
 import RabLogo from "/public/assets/images/RAB-logo.svg";
 // import "./global.css";
 import "./footer.css";
+import CTA from "@/components/organism/CTA/CTA";
 function Template({ children }) {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -16,8 +17,9 @@ function Template({ children }) {
       <header>
         <Navbar></Navbar>
       </header>
-      <main>{children}</main>
-      <footer className="mt-5">
+      <main className="mb-5">{children}</main>
+      <CTA />
+      <footer>
         <div className="container pt-5 ">
           <div className="row mb-5  ">
             <div className="col-lg-3 mb-5 mt-lg-5">
