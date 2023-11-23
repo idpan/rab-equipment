@@ -38,7 +38,7 @@ export default function Home() {
       <About />
       <Equipments />
       <Clients />
-      <CTA />
+
       <Section className="reviews" title="What Our Customer Say">
         <div className=" d-lg-flex column-gap-5 justify-content-center pt-5">
           <CardReview
@@ -68,6 +68,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
+      <CTA />
     </>
   );
 }

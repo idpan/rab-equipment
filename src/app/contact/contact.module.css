@@ -1,0 +1,41 @@
+.contact_info {
+  background-image: url("/assets/images/hero-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+  color: var(--color-light);
+}
+.contact_info h1 {
+  font-size: var(--fs-heading-small);
+  color: var(--bg-primary);
+  font-weight: 900;
+}
+.contact_desc {
+  font-size: var(--fs-hero-description-small);
+  max-width: 19em;
+}
+.form_contact {
+  color: var(--color-dark);
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.form_contact h2 {
+  font-size: 24px !important ;
+  font-weight: 700;
+}
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 992px) {
+  .contact_info {
+    padding-top: 150px;
+  }
+  .form_contact {
+    padding-top: 150px;
+    margin-left: 150px;
+  }
+}

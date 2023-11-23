@@ -17,8 +17,8 @@ function Template({ children }) {
       <header>
         <Navbar></Navbar>
       </header>
-      <main className="mb-5">{children}</main>
-      <CTA />
+      <main>{children}</main>
+
       <footer>
         <div className="container pt-5 ">
           <div className="row mb-5  ">
